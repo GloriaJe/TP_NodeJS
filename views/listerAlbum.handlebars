@@ -1,1 +1,14 @@
-<h1> Mettre ici l'album photo des stars </h1>
+
+<p>{{premierePhoto.VIP_PRENOM}} {{premierePhoto.VIP_NOM}}</p>
+<img src="/images/vip/{{premierePhoto.PHOTO_ADRESSE}}" width="250" height="330">
+
+
+<table id="tabAlbum">
+
+    {{#each photos}}
+    <td>
+        <img src="/images/vip/{{this.PHOTO_ADRESSE}}" width="160" height="200">
+    </td>
+    {{/each}}
+
+</table>
