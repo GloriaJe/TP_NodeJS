@@ -137,3 +137,33 @@ padding:5px;
     float: left;
     text-align: left;
 }
+
+/*
+* Pour encadrer les boutons sous le tableau des photo dans "listerAlbum"
+*/
+#debut {
+    border: 1px solid black;
+    float: left;
+    width: 4%;
+    margin-right: 2%;
+}
+
+#precedent {
+    border: 1px solid black;
+    float: left;
+    width: 6%;
+    margin-right: 4%;
+}
+
+#suivant {
+    border: 1px solid black;
+    float: left;
+    width: 5%;
+    margin-right: 2%;
+}
+
+#fin {
+    border: 1px solid black;
+    float: left;
+    width: 3%;
+}
