@@ -21,7 +21,9 @@ app.get('/repertoire/:lettreVip', VipController.ResultatLettre);
 app.get('/repertoire/vip/:numVip', VipController.Informations);
 
 // albums
-app.get('/album', AlbumController.ListerAlbum);
+app.get('/album/', AlbumController.ListerAlbum);
+//récupère le num du vip passé en param dans l'adresse
+app.get('/album/:numVip', AlbumController.DetailAlbum);
 
 // articles
 app.get('/articles', ArticleController.ListerVips);

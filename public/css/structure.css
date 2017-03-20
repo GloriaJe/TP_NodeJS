@@ -167,3 +167,21 @@ padding:5px;
     float: left;
     width: 3%;
 }
+
+/*
+* Partie commentaire sous la photo visionnée dans l'album
+*/
+#commentairePhoto {
+    text-align: left;
+}
+
+/*
+* Flèches pour passer à la photo précédente ou suivante
+*/
+#flecheAvant {
+    float: left;
+}
+
+#flecheApres {
+    float: right;
+}
