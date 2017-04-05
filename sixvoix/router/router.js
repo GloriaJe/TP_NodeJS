@@ -20,10 +20,8 @@ app.get('/repertoire/:lettreVip', VipController.ResultatLettre);
 //recupère le numero du VIP passé en param dans l'adresse
 app.get('/repertoire/vip/:numVip', VipController.Informations);
 
-// albums
-app.get('/album', AlbumController.ListerAlbum);
 //récupère le num du vip passé en param dans l'adresse
-app.get('/album/:numVip/:indice', AlbumController.DetailAlbum);
+app.get('/album/:numVip/:indice/:numPhoto', AlbumController.DetailAlbum);
 
 // articles
 app.get('/articles', ArticleController.ListerVips);

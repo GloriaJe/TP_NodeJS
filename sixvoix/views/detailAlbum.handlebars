@@ -1,9 +1,9 @@
-<p id="flecheAvant"><a href="#"><<</a></p>
+<p id="flecheAvant"><a href="/album/{{vipCourant}}/{{indiceCourant}}/{{photoPrecedente}}"><<</a></p>
 
 <p>{{photo1.VIP_PRENOM}} {{photo1.VIP_NOM}}</p>
-<img src="/images/vip/{{photo1.PHOTO_ADRESSE}}" width="250" height="330">
+<img src="/images/vip/{{photosVips.PHOTO_ADRESSE}}" width="250" height="330">
 
-<p id="flecheApres"><a href="/album/{{photo1.VIP_NOM}}">>></a></p>
+<p id="flecheApres"><a href="/album/{{vipCourant}}/{{indiceCourant}}/{{photoSuivante}}">>></a></p>
 
 <fieldset id="commentairePhoto">
     <legend>Commentaire</legend>

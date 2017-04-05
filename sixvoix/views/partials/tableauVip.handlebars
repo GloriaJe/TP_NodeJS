@@ -1,11 +1,11 @@
 <table>
 
     <tr>
-    {{#each photos}}
+    {{#each photos12}}
 
         {{#ifCond @index '%' 4}}        
             <td>
-                <a href="/album/{{this.VIP_NUMERO}}">
+                <a href="/album/{{this.VIP_NUMERO}}/{{../indiceCourant}}/0">
                 <img src="/images/vip/{{this.PHOTO_ADRESSE}}" width="80" height="110">
                 </a>
                 <p>{{this.VIP_NOM}} {{this.VIP_PRENOM}}
@@ -14,7 +14,7 @@
             <tr>
             </tr>
             <td>
-                <a href="/album/{{this.VIP_NUMERO}}">
+                <a href="/album/{{this.VIP_NUMERO}}/{{../indiceCourant}}/0">
                 <img src="/images/vip/{{this.PHOTO_ADRESSE}}" width="80" height="110">
                 </a>
                 <p>{{this.VIP_NOM}} {{this.VIP_PRENOM}}
@@ -26,7 +26,7 @@
 
 </table>
 
-<p id="debut"><a href="#">Début</a></p>
-<p id="precedent"><a href="#">Précédent</a></p>
-<p id="suivant"><a href="#">Suivant</a></p>
-<p id="fin"><a href="#">Fin</a></p>
+<p id="debut"><a href="/album/{{vipCourant}}/0/0">Début</a></p>
+<p id="precedent"><a href="/album/{{vipCourant}}/{{indicePrecedent}}/0">Précédent</a></p>
+<p id="suivant"><a href="/album/{{vipCourant}}/{{indiceSuivant}}/0">Suivant</a></p>
+<p id="fin"><a href="/album/{{vipCourant}}/{{indiceFin}}/0">Fin</a></p>
