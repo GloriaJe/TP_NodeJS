@@ -8,4 +8,8 @@ module.exports.AjouterVip = 	function(request, response){
     response.render('ajouterVip', response);
 }
 
+module.exports.SetVip = 	function(data, callback){
+    copnsole.log('vip');
+};
+
 

@@ -3,7 +3,7 @@
 <fieldset id="fieldSetAjouterVip">
     <legend>Ajout VIPS</legend>
 
-    <form id="formulaireAjoutVip">
+    <form id="formulaireAjoutVip" action="/vips" method="POST">
         <table>
             <tr>
                 <td>Nom* :</td>
@@ -26,7 +26,7 @@
             </tr>
             <tr>
                 <td>Nationalité :</td>
-                <td><select name="sexe" size="1">
+                <td><select name="nat" size="1">
                     <option>Américaine</option>
                     <option>Française</option>
                 </select></td>
@@ -37,11 +37,10 @@
             </tr>
             <tr>
                 <td>Sélectionner l'image' :</td>
-                <td><input type="text" name="commentaire">
-                <input type="button" value="Parcourir..."> Sujet : </td>
+                <td><input type="file" name="img" value="Parcourir..."> Sujet : </td>
             </tr>
             <tr>
-                <td><input type="button" value="Ajouter"></td>
+                <td><input type="submit" value="Ajouter"></td>
             </tr>
         <table>
     </form>

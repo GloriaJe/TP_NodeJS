@@ -6,3 +6,7 @@ module.exports.AjouterPhoto = 	function(request, response){
     response.render('ajouterPhoto', response);
 }
 
+module.exports.SetPhoto = 	function(request, response){
+    console.log('photo');
+}
+
