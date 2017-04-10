@@ -32,7 +32,7 @@ module.exports.getPhoto1 = function(numVip, callback) {
 module.exports.getPhotos = function(numVip, callback) {
     db.getConnection(function(err, connexion) {
         if (!err) {
-            var sql = "SELECT VIP_NOM, VIP_PRENOM, PHOTO_ADRESSE FROM photo p JOIN vip v ON p.VIP_NUMERO = v.VIP_NUMERO WHERE v.VIP_NUMERO = " + numVip + " ORDER BY PHOTO_NUMERO";
+            var sql = "SELECT VIP_NOM, VIP_PRENOM, PHOTO_ADRESSE, PHOTO_COMMENTAIRE FROM photo p JOIN vip v ON p.VIP_NUMERO = v.VIP_NUMERO WHERE v.VIP_NUMERO = " + numVip + " ORDER BY PHOTO_NUMERO";
             connexion.query(sql, callback);
             connexion.release();
         }
