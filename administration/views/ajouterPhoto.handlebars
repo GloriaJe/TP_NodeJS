@@ -8,44 +8,26 @@
             <tr>
                 <td>Nom du vip :</td>
                 <td><select name="vip" size="1">
-                    <option>Masculin</option>
-                    <option>Féminin</option>
+                    {{#each nomsPrenomsVips}}
+                        <option>{{this.VIP_NOM}} {{this.VIP_PRENOM}}</option>
+                    {{/each}}
                 </select></td>
             </tr>
             <tr>
                 <td>Adresse de la photo :</td>
-                <td><input type="text" name="adresse">
-                <input type="button" value="Parcourir..."></td>
+                <td><input type="file" name="img" value="Parcourir..." required></td>
             </tr>
             <tr>
-                <td>Sexe</td>
-                <td><select name="sexe" size="1">
-                    <option>Masculin</option>
-                    <option>Féminin</option>
-                </select></td>
+                <td>Titre</td>
+                <td><input type="text" name="titre" required></td>
             </tr>
             <tr>
-                <td>Date de naissance :</td>
-                <td><input type="text" size="6" name="dateNaiss" placeholder="jj/mm/aaaa"></td>
+                <td>Un petit commentaire ?</td>
+                <td><input type="text" name="comment"></td>
             </tr>
             <tr>
-                <td>Nationalité :</td>
-                <td><select name="sexe" size="1">
-                    <option>Américaine</option>
-                    <option>Française</option>
-                </select></td>
-            </tr>
-            <tr>
-                <td>Commentaire :</td>
-                <td><input type="text" id="commentaire" name="commentaire"></td>
-            </tr>
-            <tr>
-                <td>Sélectionner l'image' :</td>
-                <td><input type="text" name="commentaire">
-                <input type="button" value="Parcourir..."> Sujet : </td>
-            </tr>
-            <tr>
-                <td><input type="button" value="Ajouter"></td>
+                <td><input type="submit" value="Envoyer"></td>
+                <td><input type="reset" value="Annuler"></td>
             </tr>
         <table>
     </form>

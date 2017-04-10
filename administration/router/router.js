@@ -12,8 +12,8 @@ module.exports = function(app){
     // Main Routes
     app.get('/', ConnexionController.Index);
 
-    // Accueil après connexion
-    app.post('/home', HomeController.Admin);
+    // Accueil suivant la connexion
+    app.post('/home', HomeController.Connexion);
 
     // FVIPS
     app.get('/vips', VipController.AjouterVip);
@@ -25,5 +25,6 @@ module.exports = function(app){
 
     // Tout le reste
     app.get('*', ConnexionController.Index);
+    app.post('*', ConnexionController.Index);
 
 };
